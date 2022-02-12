@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 const Item = () => {
   return (
     <div>
-      <Card style={{ width: "18rem", alignItems: "center" }}>
+      <Card style={{ width: "18rem", alignItems: "center" , marginRight:"150px"}}>
         <Card.Img variant="top" src="holder.js/100px180" />
         <Card.Body style={{ padding: "50px" }}>
           <Card.Title>Card Title</Card.Title>
