@@ -4,9 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-motor = "*"
 uvicorn = "*"
 fastapi = "*"
+motor = "*"
 
 [dev-packages]
 
