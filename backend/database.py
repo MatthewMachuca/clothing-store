@@ -2,7 +2,7 @@ from unittest import result
 from model import Item
 import motor.motor_asyncio
 
-client = motor.motor_asyncio('mongodb://localhost27017')
+client = motor.motor_asyncio.AsyncIOMotorClient('mongodb://localhost:27017')
 
 database = client.ItemList
 
