@@ -1,4 +1,4 @@
-from unittest import result
+
 from model import Item
 import motor.motor_asyncio
 
@@ -18,7 +18,7 @@ async def fetch_all_item():
     items = []
     cursor = collection.find({})
     async for document in cursor:
-        items.appen(Item(**document))
+        items.append(Item(**document))
     return items
 
 async def create_item(item):
