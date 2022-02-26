@@ -49,6 +49,9 @@ async def post_item(item:Item):
 #async def update_item(id, data):
 #    return 1
 
-@app.delete("/api/item{id}")
-async def delete_item(id):
-    return 1
+@app.delete("/api/item{name}")
+async def delete_item(name):
+    response = await remove_item(name)
+    if response:
+        return "Successfully deleted"
+    raise HTTPException(404, " Something went wrong")

@@ -1,0 +1,24 @@
+h1{
+    font-family: Inter;
+    font-size: 300%;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2{
+    font-family: Inter;
+    font-size: 200%;
+    color: rgb(122, 118, 118);
+    
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+img {
+    margin-right: 25%;
+    margin-left: 25%;
+    border: 1px solid black;
+}

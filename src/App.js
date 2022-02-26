@@ -3,11 +3,11 @@ import "./App.css";
 import Navigation from "./components/navigation";
 import Item from "./components/item";
 import Catolog from "./components/catolog";
+import Home from "./components/home";
 const App = () => {
   return (
     <div>
-      <Navigation></Navigation>
-      <Catolog></Catolog>
+      <Home></Home>
     </div>
   );
 };
