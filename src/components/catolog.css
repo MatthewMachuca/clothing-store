@@ -1,3 +1,21 @@
-.catolog{
-   margin-right: 50px;
-}
+.wrapper {
+   display: grid;
+   grid-template-columns: 25% 25% 25%;
+   grid-gap: 50px;
+   
+   padding: 10px;
+   margin-left: 20%;
+ 
+ }
+         
+ .item {
+ background-color: rgba(255, 255, 255, 0.8);
+   text-align: center;
+   padding: 20px 0;
+   font-size: 30px;
+ }
+ 
+         
+ @media (max-width: 992px) {
+     .container {  grid-template-columns: auto;}
+ }   
