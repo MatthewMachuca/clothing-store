@@ -4,14 +4,14 @@ const Item = () => {
   return (
     <div>
       <Card style={{ width: "18rem", alignItems: "center" , marginRight:"150px"}}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src="https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/444975/item/goods_31_444975.jpg?width=750" />
         <Card.Body style={{ padding: "50px" }}>
-          <Card.Title>Card Title</Card.Title>
+          <Card.Title>Item Name</Card.Title>
+          <Card.Subtitle> Price: ($19.99) </Card.Subtitle>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            Full item description here.
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="primary">Add To Cart</Button>
         </Card.Body>
       </Card>
     </div>

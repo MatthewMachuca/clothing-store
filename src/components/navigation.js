@@ -18,6 +18,7 @@ const Navigation = () => {
             <Nav.Link href="/trending" >Trending</Nav.Link>
           </Nav>
           <Nav>
+          <Nav.Link href="/admin" >Admin Panel </Nav.Link>
             <Button variant="outline-dark">
               Cart
               <BsFillCartFill /> <Badge bg="secondary">9</Badge>
