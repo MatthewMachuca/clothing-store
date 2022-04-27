@@ -1,6 +1,32 @@
-import { Form , Button} from "react-bootstrap"
+import { Form , Button, } from "react-bootstrap"
+import axios from "axios"
+import { useState, useEffect } from "react"
 import "./admin.css"
+
+
+
+
+
 const Admin = () => {
+
+  const [inventoryList, setInventoryList] = useState([{}])
+
+  const [name, setName] = useState('')
+  const [description, setDescription] = useState('')
+  const [price, setPrice] = useState('')
+  const [stock, setStock]= useState('')
+  const [trending, setTrending] = useState('')
+  const [picture, setPicture] = useState('')
+  
+  //Read all inventory
+  // useEffect(() => {
+  //   axios.get('http://localhost:8000/api/item')
+  //   .then( res=> {
+  //     setInventoryList(res.data)
+  //   })
+  // })
+
+
     return (
         <div><h2 className="adminH2"> Add an item to the store</h2>
         <Form className="myForm">
@@ -28,6 +54,17 @@ const Admin = () => {
 
   <Button variant="secondary" className="formButton">Submit</Button>
         </Form>
+
+
+
+        <div>
+          <h2>
+            Inventory list
+          </h2>
+          <ul>
+
+          </ul>
+        </div>
         </div>
     )
 }
