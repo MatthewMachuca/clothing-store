@@ -11,11 +11,11 @@ from database import (
     create_item,
     remove_item,
 )
-origins = ['https://localhost:3000']
+origins = ['https://localhost:3000','https://localhost:3000/admin']
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
