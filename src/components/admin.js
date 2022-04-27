@@ -24,7 +24,7 @@ const Admin = () => {
     .then( res => {
       setInventoryList(res.data)
     })
-  },[name, inventoryList])
+  },[name])
 
 
 
@@ -35,7 +35,9 @@ const addItemHandler = () => {
 'price':price,
 'stock': stock,
 'trending':trending,
-'picture':picture}).then(res=>console.log(res))
+'picture':picture}).then(res=>window.location.reload())
+
+ 
 }
 
 const handleTrending = () => {
@@ -72,7 +74,7 @@ const handleTrending = () => {
     <input type="checkbox" className="check" onChange={handleTrending} />
   </Form.Group>
 
-  <Button variant="secondary" className="formButton" onClick={addItemHandler} >Submit</Button>
+  <Button variant="secondary" className="formButton" onClick={addItemHandler}  >Submit</Button>
         </Form>
 
 
