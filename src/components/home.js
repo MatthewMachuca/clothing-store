@@ -5,7 +5,7 @@ import stockclothing from "./images/stockclothing.png";
 const Home = () => {
   return (
     <div>
-      <div>
+      <div >
         <h1> Better Clothing for the planet</h1>
         <h2>
           {" "}
@@ -16,8 +16,8 @@ const Home = () => {
       <Button
         variant="outline-secondary"
         style={{
-          marginLeft: "50%",
-          marginRight: "25%",
+          marginLeft: "47%",
+          marginRight: "20%",
           marginTop: "20px",
           marginBottom: "100px",
         }}
@@ -28,14 +28,15 @@ const Home = () => {
       <img src={stockclothing}></img>
 
       <div className="footer">
-        <h3> test</h3>
+        <h3> Email Newsletter Sign-Up</h3>
         <p>
           Be the first to know about our special offers, new product launches,
           and events
         </p>
         <form>
-          <input type="text"></input>
-          <label> Email</label>
+          <input type="text" placeholder="Enter Email"></input>
+          
+          <button>Sign-Up </button>
         </form>
       </div>
     </div>

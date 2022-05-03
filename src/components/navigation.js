@@ -33,7 +33,7 @@ const Navigation = () => {
             <Nav.Link href="/admin">Admin Panel </Nav.Link>
             <Button variant="outline-dark" href="/checkout">
               Cart
-              <BsFillCartFill /> <Badge bg="secondary">9</Badge>
+              <BsFillCartFill /> <Badge bg="secondary"></Badge>
               <span className="visually-hidden">items in cart</span>
             </Button>
           </Nav>

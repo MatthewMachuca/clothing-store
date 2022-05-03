@@ -12,6 +12,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Navigation />
+      
       <div>
         <Routes>
           <Route exact path="/" element={<Home />} />
