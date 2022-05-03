@@ -40,6 +40,7 @@ const addItemHandler = () => {
  
 }
 
+
 const handleTrending = () => {
   setTrending(!trending)
 
@@ -90,4 +91,4 @@ const handleTrending = () => {
         </div>
     )
 }
-export default Admin
+export default Admin;

@@ -7,6 +7,7 @@ import Home from "./components/home";
 import Checkout from "./components/checkout";
 import Admin from "./components/admin";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Trending from "./components/trending";
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,7 +16,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/catolog" element={<Catolog />} />
-          <Route path="/trending" element={<Catolog />} />
+          <Route path="/trending" element={<Trending />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>

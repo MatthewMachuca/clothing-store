@@ -1,15 +1,26 @@
-import Item from "./item";
 import './catolog.css'
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import CatologListView from "./catologListview";
 const Catolog = () => {
+  const [inventoryList, setInventoryList] = useState([{}])
+
+  useEffect(() => {
+    axios.get('http://localhost:8000/api/item')
+    .then( res => {
+      setInventoryList(res.data)
+    })
+  },[])
+
+
   return (
-    <div class="wrapper">
-      
-        <Item class="item" ></Item>
-        <Item class="item" ></Item>
-        <Item class="item" ></Item>
-        <Item class="item" ></Item>
-   
-    </div>
+<div className='parent' > 
+  <CatologListView  inventoryList={inventoryList}/>
+ 
+       
+  </div>
+  
+             
   );
 };
 export default Catolog;
